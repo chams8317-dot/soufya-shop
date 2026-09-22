@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Soufya Shop | متجر إلكتروني</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- TOP BAR -->
+<div class="top-bar">
+    🚚 توصيل سريع لجميع المدن المغربية
+    <span> | </span>
+    💵 الدفع عند الاستلام متوفر
+</div>
+
+
+<!-- HEADER -->
+<header class="header">
+
+    <div class="container header-content">
+
+        <button class="menu-btn" id="menuBtn">
+            ☰
+        </button>
+
+        <a href="#" class="logo">
+            SOUFYA <span>SHOP</span>
+        </a>
+
+        <nav class="desktop-nav">
+            <a href="#home">الرئيسية</a>
+            <a href="#products">المنتجات</a>
+            <a href="#offers">العروض</a>
+            <a href="#reviews">آراء العملاء</a>
+            <a href="#contact">تواصل معنا</a>
+        </nav>
+
+        <div class="header-actions">
+
+            <button id="searchBtn" class="icon-btn">
+                🔍
+            </button>
+
+            <button id="cartBtn" class="cart-btn">
+                🛒
+                <span id="cartCount">0</span>
+            </button>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+
+    <button class="close-menu" id="closeMenu">
+        ✕
+    </button>
+
+    <a href="#home">الرئيسية</a>
+    <a href="#products">المنتجات</a>
+    <a href="#offers">العروض</a>
+    <a href="#reviews">آراء العملاء</a>
+    <a href="#contact">تواصل معنا</a>
+
+</div>
+
+
+<!-- SEARCH -->
+<div class="search-overlay" id="searchOverlay">
+
+    <div class="search-box">
+
+        <button id="closeSearch">✕</button>
+
+        <h2>شنو كتقلب عليه؟</h2>
+
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="بحث عن منتج..."
+        >
+
+    </div>
+
+</div>
+
+
+<!-- HERO -->
+<section class="hero" id="home">
+
+    <div class="container hero-content">
+
+        <div class="hero-text">
+
+            <span class="hero-label">
+                ✨ منتجات مختارة بعناية
+            </span>
+
+            <h1>
+                اكتشف منتجات
+                <strong>تستاهل تجربها</strong>
+            </h1>
+
+            <p>
+                منتجات مميزة، أسعار مناسبة، وتوصيل سريع حتى لباب دارك.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#products" class="btn btn-primary">
+                    تسوق الآن
+                </a>
+
+                <a href="#offers" class="btn btn-outline">
+                    شوف العروض
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="hero-image">
+
+            <img
+                src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?auto=format&fit=crop&w=1000&q=85"
+                alt="Soufya Shop"
+            >
+
+            <div class="floating-card">
+
+                <strong>🔥 الأكثر مبيعاً</strong>
+
+                <span>
+                    منتجات مختارة
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- BENEFITS -->
+<section class="benefits">
+
+    <div class="container benefits-grid">
+
+        <div class="benefit">
+            <div class="benefit-icon">🚚</div>
+            <div>
+                <strong>توصيل سريع</strong>
+                <p>حتى باب دارك</p>
+            </div>
+        </div>
+
+        <div class="benefit">
+            <div class="benefit-icon">💵</div>
+            <div>
+                <strong>الدفع عند الاستلام</strong>
+                <p>خلص ملي يوصلك الطلب</p>
+            </div>
+        </div>
+
+        <div class="benefit">
+            <div class="benefit-icon">🔒</div>
+            <div>
+                <strong>طلب آمن</strong>
+                <p>بياناتك محمية</p>
+            </div>
+        </div>
+
+        <div class="benefit">
+            <div class="benefit-icon">💬</div>
+            <div>
+                <strong>دعم العملاء</strong>
+                <p>متواجدين لمساعدتك</p>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- PRODUCTS -->
+<section class="products-section" id="products">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span>اختار اللي مناسب ليك</span>
+
+            <h2>
+                منتجاتنا
+            </h2>
+
+            <p>
+                اكتشف مجموعة من المنتجات المختارة بعناية.
+            </p>
+
+        </div>
+
+
+        <!-- FILTERS -->
+        <div class="filters">
+
+            <button class="filter active" data-category="all">
+                الكل
+            </button>
+
+            <button class="filter" data-category="beauty">
+                الجمال
+            </button>
+
+            <button class="filter" data-category="home">
+                المنزل
+            </button>
+
+            <button class="filter" data-category="gadgets">
+                Gadgets
+            </button>
+
+            <button class="filter" data-category="pets">
+                الحيوانات
+            </button>
+
+        </div>
+
+
+        <div class="products-grid" id="productsGrid"></div>
+
+    </div>
+
+</section>
+
+
+<!-- OFFER -->
+<section class="offer-section" id="offers">
+
+    <div class="container">
+
+        <div class="offer">
+
+            <div>
+
+                <span>
+                    🔥 عرض محدود
+                </span>
+
+                <h2>
+                    خصم خاص على منتجات مختارة
+                </h2>
+
+                <p>
+                    اغتنم الفرصة قبل انتهاء العرض.
+                </p>
+
+                <a href="#products" class="btn btn-light">
+                    اكتشف العرض
+                </a>
+
+            </div>
+
+            <div class="offer-number">
+                -30%
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- WHY US -->
+<section class="why-us">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span>علاش SOUFYA SHOP؟</span>
+
+            <h2>
+                تجربة شراء بسيطة
+            </h2>
+
+        </div>
+
+
+        <div class="why-grid">
+
+            <div class="why-card">
+                <span>01</span>
+                <h3>منتجات مختارة</h3>
+                <p>
+                    كنختارو المنتجات اللي عندها قيمة حقيقية للزبون.
+                </p>
+            </div>
+
+            <div class="why-card">
+                <span>02</span>
+                <h3>طلب سهل</h3>
+                <p>
+                    اختار المنتج، زيدو للسلة وكمل معلومات الطلب.
+                </p>
+            </div>
+
+            <div class="why-card">
+                <span>03</span>
+                <h3>الدفع عند الاستلام</h3>
+                <p>
+                    خلص عند استلام المنتج بدون تعقيد.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- REVIEWS -->
+<section class="reviews-section" id="reviews">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span>آراء العملاء</span>
+
+            <h2>
+                شنو قالو علينا؟
+            </h2>
+
+        </div>
+
+
+        <div class="reviews-grid">
+
+            <div class="review">
+
+                <div class="stars">
+                    ★★★★★
+                </div>
+
+                <p>
+                    "الطلب وصلني بسرعة والمنتج كان كيفما شفتو فالموقع."
+                </p>
+
+                <strong>
+                    — سارة
+                </strong>
+
+            </div>
+
+
+            <div class="review">
+
+                <div class="stars">
+                    ★★★★★
+                </div>
+
+                <p>
+                    "عجبني بزاف التعامل والتوصيل، غادي نعاود نطلب."
+                </p>
+
+                <strong>
+                    — أمينة
+                </strong>
+
+            </div>
+
+
+            <div class="review">
+
+                <div class="stars">
+                    ★★★★★
+                </div>
+
+                <p>
+                    "عملية الطلب كانت سهلة والدفع عند الاستلام ريحني."
+                </p>
+
+                <strong>
+                    — ياسين
+                </strong>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- NEWSLETTER -->
+<section class="newsletter">
+
+    <div class="container newsletter-content">
+
+        <div>
+
+            <span>
+                📩 عروض خاصة
+            </span>
+
+            <h2>
+                بقى على اطلاع بالجديد
+            </h2>
+
+        </div>
+
+        <form id="newsletterForm">
+
+            <input
+                type="email"
+                placeholder="البريد الإلكتروني"
+                required
+            >
+
+            <button>
+                اشترك
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+
+
+<!-- FOOTER -->
+<footer id="contact">
+
+    <div class="container footer-grid">
+
+        <div>
+
+            <a href="#" class="logo footer-logo">
+                SOUFYA <span>SHOP</span>
+            </a>
+
+            <p>
+                متجر إلكتروني يوفر منتجات مختارة بعناية وتجربة شراء بسيطة.
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <h3>
+                روابط
+            </h3>
+
+            <a href="#home">الرئيسية</a>
+            <a href="#products">المنتجات</a>
+            <a href="#offers">العروض</a>
+
+        </div>
+
+
+        <div>
+
+            <h3>
+                المساعدة
+            </h3>
+
+            <a href="#">سياسة الخصوصية</a>
+            <a href="#">شروط الاستخدام</a>
+            <a href="#">سياسة الاسترجاع</a>
+
+        </div>
+
+
+        <div>
+
+            <h3>
+                تواصل معنا
+            </h3>
+
+            <p>
+                📱 WhatsApp
+            </p>
+
+            <p>
+                📧 support@soufyashop.com
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="copyright">
+
+        © <span id="year"></span> Soufya Shop — جميع الحقوق محفوظة
+
+    </div>
+
+</footer>
+
+
+<!-- CART DRAWER -->
+<div class="cart-overlay" id="cartOverlay"></div>
+
+<aside class="cart-drawer" id="cartDrawer">
+
+    <div class="cart-header">
+
+        <h2>
+            سلة المشتريات
+        </h2>
+
+        <button id="closeCart">
+            ✕
+        </button>
+
+    </div>
+
+
+    <div id="cartItems" class="cart-items">
+
+        <div class="empty-cart">
+            🛒
+            <p>
+                السلة خاوية
+            </p>
+        </div>
+
+    </div>
+
+
+    <div class="cart-footer">
+
+        <div class="cart-total">
+
+            <span>
+                المجموع
+            </span>
+
+            <strong id="cartTotal">
+                0 DH
+            </strong>
+
+        </div>
+
+
+        <div class="payment-method">
+
+            <strong>
+                طريقة الدفع
+            </strong>
+
+            <label>
+                <input
+                    type="radio"
+                    name="payment"
+                    value="cod"
+                    checked
+                >
+
+                الدفع عند الاستلام
+            </label>
+
+            <label>
+                <input
+                    type="radio"
+                    name="payment"
+                    value="online"
+                >
+
+                الدفع الإلكتروني
+            </label>
+
+        </div>
+
+
+        <button class="checkout-btn" id="checkoutBtn">
+            إتمام الطلب
+        </button>
+
+    </div>
+
+</aside>
+
+
+<!-- CHECKOUT MODAL -->
+<div class="modal" id="checkoutModal">
+
+    <div class="modal-content">
+
+        <button class="modal-close" id="closeCheckout">
+            ✕
+        </button>
+
+        <h2>
+            معلومات الطلب
+        </h2>
+
+        <p class="modal-subtitle">
+            دخل معلوماتك باش نجهزو الطلب.
+        </p>
+
+
+        <form id="checkoutForm">
+
+            <label>
+                الاسم الكامل
+                <input
+                    type="text"
+                    id="customerName"
+                    required
+                    placeholder="مثال: محمد العلوي"
+                >
+            </label>
+
+
+            <label>
+                رقم الهاتف
+                <input
+                    type="tel"
+                    id="customerPhone"
+                    required
+                    placeholder="06XXXXXXXX"
+                >
+            </label>
+
+
+            <label>
+                المدينة
+                <input
+                    type="text"
+                    id="customerCity"
+                    required
+                    placeholder="مثال: فاس"
+                >
+            </label>
+
+
+            <label>
+                العنوان
+                <textarea
+                    id="customerAddress"
+                    required
+                    placeholder="العنوان بالتفصيل"
+                ></textarea>
+            </label>
+
+
+            <button
+                type="submit"
+                class="checkout-btn"
+            >
+                تأكيد الطلب عبر WhatsApp
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+
+
+<!-- TOAST -->
+<div class="toast" id="toast">
+    تمت إضافة المنتج للسلة ✅
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
